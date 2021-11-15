@@ -1,0 +1,28 @@
+<div class="boxBody">
+    <h1>Vizualizare Conturi</h1>
+    <div class="backBtn" routerLink="../">Back</div>
+    <h3>Stare conturi</h3>
+
+    <div>
+        <div class="wrapper2">
+            <div class="accItem2">
+                <div class="parag">Account number</div>
+                <div class="parag">Status</div>
+                <div class="parag">Balance</div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="wrapper">
+
+            <div class="accItem" *ngFor="let i of accounts">
+                <div class="parag">{{i.accountNo}}</div>
+                <div class="parag">{{i.state}}</div>
+                <div class="parag">{{i.balance}}</div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+</div>

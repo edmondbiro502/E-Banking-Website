@@ -1,0 +1,1 @@
+ destAccount=77777777, sourceAccount=12345678, destBalance=100.0, sourceBalance=100.0, amount=100.0, localDate=2021-11-14

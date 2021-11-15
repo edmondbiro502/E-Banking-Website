@@ -1,0 +1,36 @@
+<div class="boxBody">
+    <h1>Lista conturi de aprobare</h1>
+    <div class="backBtn" routerLink="../">Back</div>
+    
+    <div>
+        <div class="wrapper2">
+            <div class="accItem2">
+                <div class="parag">Account number</div>
+                <div class="parag">Client Id</div>
+                <div class="parag">Accept</div>
+                <div class="parag">Decline</div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="wrapper">
+
+            <div class="accItem" *ngFor="let i of accounts;let ind = index">
+                <div class="parag">{{i.accountNo}}</div>
+                <div class="parag">{{i.clientId}}</div>
+                <div class="paragBtn">
+                    <div class="paragBtnBody" (click)="generateAcceptAction(ind)">
+                        Accept
+                    </div>
+                </div>
+
+                <div class="paragBtn">
+                    <div class="paragBtnBody" (click)="generateRejectAction(ind)">
+                        Reject
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>

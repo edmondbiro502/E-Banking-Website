@@ -1,0 +1,17 @@
+<div class="boxBody">
+    <h1>Administrare Cont</h1>
+    <div class="backBtn" routerLink="../">Back</div>
+    <h3>Solicitare creare cont nou</h3>
+    <h4 class="accounts">List of accounts</h4>
+    <div  class="accList">
+        <p *ngFor="let i of accounts" class="listItem">
+            {{i.accountNo}}
+        </p>
+    </div>
+    <h4 class="accLabel">Create New Account:</h4>
+    <input class="addAcc" (change)="getNumber($event)" placeholder="Account number" [value]="accNum">
+    <button class="createAcc" (click)="createAccount($event)">Solicita cont</button>
+    <div class="msgClass">
+        {{message}}
+    </div>
+</div>
